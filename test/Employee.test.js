@@ -15,7 +15,7 @@ describe("Employee", () => {
     });
 
     it("should return Employee email", () => {
-      const emailVal = "Hermes";
+      const emailVal = "Hermes@gmail.com";
       const emp = new Employee("Conrad", 15, emailVal);
       expect(emp.email).toBe(emailVal);
     });
