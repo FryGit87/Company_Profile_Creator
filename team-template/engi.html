@@ -1,16 +1,16 @@
 <div class="employee-card card text-white bg-info mb-3" style="max-width: 18rem;">
     <div class="card-header">
-        <h3 class="card-title">{{ }}</h3>
-        <h4 class="card-title"><i class="fas fa-glasses mr-2"></i>{{  }}</h4>
+        <h3 class="card-title">{{name}}</h3>
+        <h4 class="card-title"><i class="fas fa-glasses mr-2"></i>{{ role }}</h4>
     </div>
     <div class="card-body">
     <ul class="list-group">
-        <li class="list-group-item">EmployeeID {{  }}</li>
+        <li class="list-group-item">EmployeeID {{ id }}</li>
         <li class="list-group-item">
-        Employee Email <a href="mailto:{{  }}">{{  }}</a>
+        Employee Email <a href="mailto:{{ email }}">{{ email }}</a>
         </li>
         <li class="list-group-item">
-        Employee GitHub <a href="https://github.com/{{  }}" target="_blank" rel="noopener noreferrer">{{  }}</a>
+        Employee GitHub <a href="https://github.com/{{ github }}" target="_blank" rel="noopener noreferrer">{{ github }}</a>
         </li>
     </ul>
     </div>

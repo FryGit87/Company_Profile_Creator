@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/FryGit87/Company_Profile_Creator/issues"
   },
-  "homepage": "https://github.com/FryGit87/Company_Profile_Creator#readme"
+  "homepage": "https://github.com/FryGit87/Company_Profile_Creator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
