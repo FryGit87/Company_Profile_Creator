@@ -1,0 +1,23 @@
+{
+  "name": "company_profile_creator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FryGit87/Company_Profile_Creator.git"
+  },
+  "author": "Kym Reilly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FryGit87/Company_Profile_Creator/issues"
+  },
+  "homepage": "https://github.com/FryGit87/Company_Profile_Creator#readme"
+}
