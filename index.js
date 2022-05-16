@@ -53,22 +53,22 @@ function getEngineerInfo() {
       {
         type: "input",
         name: "name",
-        message: "What is the Engineer's name?",
+        message: "What is the engineer's name?",
       },
       {
         type: "input",
         name: "id",
-        message: "What is the Engineer's ID?",
+        message: "What is the engineer's ID?",
       },
       {
         type: "input",
         name: "email",
-        message: "What is the Engineer's email?",
+        message: "What is the engineer's email?",
       },
       {
         type: "input",
         name: "github",
-        message: "What is the Engineer's username for GitHub?",
+        message: "What is the engineer's username for GitHub?",
       },
     ])
     .then((data) => {
@@ -78,6 +78,35 @@ function getEngineerInfo() {
         data.email,
         data.github
       );
+    });
+}
+
+function getInternInfo() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "What is the intern's name?",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What is the intern's ID?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is the intern's email?",
+      },
+      {
+        type: "input",
+        name: "school",
+        message: "What is the intern school?",
+      },
+    ])
+    .then((data) => {
+      const intern = new Intern(data.name, data.id, data.email, data.school);
     });
 }
 
