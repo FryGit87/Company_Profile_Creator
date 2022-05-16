@@ -35,7 +35,49 @@ function getManagerInfo() {
       },
     ])
     .then((data) => {
+      const manager = new Manager(
+        data.name,
+        data.id,
+        data.email,
+        data.officeNumber
+      );
       console.log(data);
+    });
+}
+
+function addStaff() {}
+
+function getEngineerInfo() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "What is the Engineer's name?",
+      },
+      {
+        type: "input",
+        name: "id",
+        message: "What is the Engineer's ID?",
+      },
+      {
+        type: "input",
+        name: "email",
+        message: "What is the Engineer's email?",
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "What is the Engineer's username for GitHub?",
+      },
+    ])
+    .then((data) => {
+      const engineer = new Engineer(
+        data.name,
+        data.id,
+        data.email,
+        data.github
+      );
     });
 }
 
