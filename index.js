@@ -45,8 +45,6 @@ function getManagerInfo() {
     });
 }
 
-function addStaff() {}
-
 function getEngineerInfo() {
   inquirer
     .prompt([
@@ -107,6 +105,27 @@ function getInternInfo() {
     ])
     .then((data) => {
       const intern = new Intern(data.name, data.id, data.email, data.school);
+    });
+}
+
+function addStaff() {
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "staffRole",
+        message: "Would you like to hire an Engineer or Intern?",
+        choices: ["Engineer", "Intern", "No budget to employee anymore staff!"],
+      },
+    ])
+    .then((data) => {
+      if (data.staffRole === "Engineer") {
+        getEngineerInfo();
+      } else if (data.staffRole === "Intern") {
+        getInternInfo();
+      } else {
+        concatenateStaff();
+      }
     });
 }
 
