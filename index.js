@@ -5,6 +5,9 @@ const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const staff = [];
+const hire = require("./lib/workplace");
+const fileDir = path.resolve(__dirname, "dist");
+const filePath = path.join(fileDir, "New-Team.html");
 
 function run() {
   getManagerInfo();
@@ -41,7 +44,8 @@ function getManagerInfo() {
         data.email,
         data.officeNumber
       );
-      console.log(data);
+      staff.push(manager);
+      addStaff();
     });
 }
 
@@ -76,6 +80,8 @@ function getEngineerInfo() {
         data.email,
         data.github
       );
+      staff.push(engineer);
+      addStaff();
     });
 }
 
@@ -105,6 +111,8 @@ function getInternInfo() {
     ])
     .then((data) => {
       const intern = new Intern(data.name, data.id, data.email, data.school);
+      staff.push(intern);
+      addStaff();
     });
 }
 
@@ -127,6 +135,11 @@ function addStaff() {
         concatenateStaff();
       }
     });
+}
+
+function concatenateStaff() {
+  // need to fs
+  fs.writeFileSync(filePath, hire(staff));
 }
 
 run();
