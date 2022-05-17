@@ -7,7 +7,7 @@ const Intern = require("./lib/Intern");
 const staff = [];
 const hire = require("./lib/workplace");
 const fileDir = path.resolve(__dirname, "dist");
-const filePath = path.join(fileDir, "New-Team.html");
+const filePath = path.join(fileDir, "Workplace.html");
 
 function run() {
   getManagerInfo();
