@@ -1,15 +1,15 @@
 <div class="employee-card card text-white bg-info mb-3" style="max-width: 18rem;">
     <div class="card-header">
-        <h3 class="card-title">{{ name }}</h3>
+        <h3 class="card-title">{{name}}</h3>
         <h4 class="card-title"><i class="fas fa-user-graduate mr-2"></i>   {{ role }}</h4>
     </div>
     <div class="card-body">
         <ul class="list-group">
-            <li class="list-group-item">EmployeeID {{ id }}</li>
+            <li class="list-group-item">ID: {{id}}</li>
             <li class="list-group-item">
-                Employee Email <a href="mailto:{{ email }}">{{ email }}</a>
+                Email: <a href="mailto:{{ email }}">{{email}}</a>
             </li>
-            <li class="list-group-item">School: {{ school }}</a>
+            <li class="list-group-item">School: {{school}}</a>
             </li>
         </ul>
     </div>

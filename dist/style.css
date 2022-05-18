@@ -5,3 +5,8 @@
 .employee-cards{
     font-weight: 400;
 }
+
+.card-body{
+    width:200px;
+    
+}
