@@ -139,7 +139,7 @@ function addStaff() {
 
 function concatenateStaff() {
   // need to fs
-  fs.writeFileSync(filePath, hire(staff));
+  fs.writeFileSync(filePath, hire(staff), "utf-8");
 }
 
 run();
