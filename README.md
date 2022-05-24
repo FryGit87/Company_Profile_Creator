@@ -56,6 +56,8 @@ node index.js
 
 Please see instructional video below:
 
+Instructional Video format: [Click here!](https://drive.google.com/file/d/1VTjVOSlm32SlCLtreHTDWhdVcdy8lAR-/view?usp=sharing)
+
 ![Application Presentation](./media/how-to-use.gif)
 
 ![User Input](./media/userInput.png)
