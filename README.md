@@ -58,6 +58,10 @@ Please see instructional video below:
 
 Instructional Video format: [Click here!](https://drive.google.com/file/d/1VTjVOSlm32SlCLtreHTDWhdVcdy8lAR-/view?usp=sharing)
 
+
+https://user-images.githubusercontent.com/76273697/170458502-64aa50cb-2060-40b8-8368-e12c8e97d760.mp4
+
+
 ![Application Presentation](./media/how-to-use.gif)
 
 ![User Input](./media/userInput.png)
